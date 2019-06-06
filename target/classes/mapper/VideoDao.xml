@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qiuligao.dao.VideoDao">
+    <select id="getVideoByCameraId" resultType="com.qiuligao.entity.Video" parameterType="int">
+        select * from video where camera_id = #{id}
+    </select>
+
+    <insert id="uploadVideos">
+        insert into video (NAME, time, length, position, file_position, camera_id) values (#{name}, #{time}, #{length}, #{position}, #{filePosition}, #{cameraID});
+    </insert>
+</mapper>

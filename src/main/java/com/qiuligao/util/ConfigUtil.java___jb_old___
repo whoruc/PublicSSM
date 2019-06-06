@@ -1,0 +1,55 @@
+enied
+[2019-06-01 20:35:08] Downloaded 24 apps via HTTP, 649 KB (135 KB compressed)
+[2019-06-01 20:35:08] UpdatesJob: finished OK, nAppsUpdated 24 (649 KB), nPackagesUpdated 0 (0 KB)
+[2019-06-01 20:35:23] Starting async write D:\steam/appcache/appinfo.vdf (2592049 bytes)
+[2019-06-01 20:37:02] RequestAppInfoUpdate: nNumAppIDs 1
+[2019-06-01 20:37:03] Requesting 1 apps, 0 packages (meta data, 0 prev attempts)
+[2019-06-01 20:37:03] UpdatesJob: finished OK, nAppsUpdated 0 (0 KB), nPackagesUpdated 0 (0 KB)
+[2019-06-01 20:50:00] Packages changed: 
+[2019-06-01 20:50:00] Apps changed: 
+[2019-06-01 20:50:00] Change number 6360566->6360597, apps: 0/20, packages: 0/4
+[2019-06-01 21:05:00] Apps changed: 
+[2019-06-01 21:05:00] Change number 6360597->6360619, apps: 0/21, packages: 0/0
+[2019-06-01 21:20:00] Packages changed: 
+[2019-06-01 21:20:00] Apps changed: 
+[2019-06-01 21:20:00] Change number 6360619->6360649, apps: 0/19, packages: 0/1
+[2019-06-01 21:35:02] Apps changed: 
+[2019-06-01 21:35:02] Change number 6360649->6360675, apps: 0/20, packages: 0/0
+[2019-06-01 21:50:00] Packages changed: 
+[2019-06-01 21:50:00] Apps changed: 
+[2019-06-01 21:50:00] Change number 6360675->6360694, apps: 0/15, packages: 0/2
+[2019-06-01 22:05:01] Packages changed: 
+[2019-06-01 22:05:01] Apps changed: 
+[2019-06-01 22:05:01] Change number 6360694->6360713, apps: 0/13, packages: 0/3
+[2019-06-01 22:20:01] Packages changed: 
+[2019-06-01 22:20:01] Apps changed: 
+[2019-06-01 22:20:01] Change number 6360713->6360728, apps: 0/11, packages: 0/6
+[2019-06-01 22:35:01] Apps changed: 17505=6360733,17500=6360729,
+[2019-06-01 22:35:01] Change number 6360728->6360749, apps: 2/19, packages: 0/0
+[2019-06-01 22:35:01] Requesting 2 apps, 0 packages (meta data, 0 prev attempts)
+[2019-06-01 22:35:04] Downloaded 2 apps via HTTP, 10 KB (3 KB compressed)
+[2019-06-01 22:35:04] UpdatesJob: finished OK, nAppsUpdated 2 (10 KB), nPackagesUpdated 0 (0 KB)
+[2019-06-01 22:35:19] Starting async write D:\steam/appcache/appinfo.vdf (2592039 bytes)
+[2019-06-01 22:50:01] Apps changed: 17505=6360761,17500=6360756,
+[2019-06-01 22:50:01] Change number 6360749->6360766, apps: 2/16, packages: 0/0
+[2019-06-01 22:50:01] Requesting 2 apps, 0 packages (meta data, 0 prev attempts)
+[2019-06-01 22:50:03] Downloaded 2 apps via HTTP, 10 KB (3 KB compressed)
+[2019-06-01 22:50:03] UpdatesJob: finished OK, nAppsUpdated 2 (10 KB), nPackagesUpdated 0 (0 KB)
+[2019-06-01 22:50:18] Starting async write D:\steam/appcache/appinfo.vdf (2592039 bytes)
+[2019-06-01 23:05:01] Packages changed: 
+[2019-06-01 23:05:01] Apps changed: 
+[2019-06-01 23:05:01] Change number 6360766->6360788, apps: 0/17, packages: 0/2
+[2019-06-01 23:20:01] Packages changed: 
+[2019-06-01 23:20:01] Apps changed: 
+[2019-06-01 23:20:01] Change number 6360788->6360809, apps: 0/19, packages: 0/2
+[2019-06-01 23:35:01] Apps changed: 219640=6360832,
+[2019-06-01 23:35:01] Change number 6360809->6360922, apps: 1/109, packages: 0/0
+[2019-06-01 23:35:01] Requesting 1 apps, 0 packages (meta data, 0 prev attempts)
+[2019-06-01 23:35:02] Downloaded 1 apps via HTTP, 15 KB (3 KB compressed)
+[2019-06-01 23:35:02] UpdatesJob: finished OK, nAppsUpdated 1 (15 KB), nPackagesUpdated 0 (0 KB)
+[2019-06-01 23:35:17] Starting async write D:\steam/appcache/appinfo.vdf (2592039 bytes)
+[2019-06-01 23:50:01] Apps changed: 
+[2019-06-01 23:50:01] Change number 6360922->6360952, apps: 0/24, packages: 0/0
+[2019-06-02 00:05:01] Packages changed: 
+[2019-06-02 00:05:01] Apps changed: 
+[2019-06-02

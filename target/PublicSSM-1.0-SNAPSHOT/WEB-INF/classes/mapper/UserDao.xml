@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.qiuligao.dao.UserDao">
+    <select id="login" resultType="int" parameterType="String">
+        select ifnull((select if(u.password=#{password}, 1, -1) from user u where u.account=#{account}), 0)
+    </select>
+    
+    <insert id="sign" parameterType="String">
+        insert into user values (#{account}, #{password});
+    </insert>
+</mapper>
