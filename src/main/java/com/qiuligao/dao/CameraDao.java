@@ -30,4 +30,10 @@ public interface CameraDao {
      * @return
      */
     List<Camera> getAllCamera();
+
+    /**
+     * 增加对应摄像头的超标次数
+     * @param id
+     */
+    void addExcreedTimes(int id);
 }

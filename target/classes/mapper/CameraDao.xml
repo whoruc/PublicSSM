@@ -13,4 +13,8 @@
     <select id="getAllCamera" resultType="com.qiuligao.entity.Camera" >
         select * from camera
     </select>
+
+    <update id="addExcreedTimes" parameterType="int">
+        update camera set times = times + 1 where id = #{id}
+    </update>
 </mapper>

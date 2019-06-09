@@ -42,13 +42,19 @@ public class VideoController {
         String fileName = file.getOriginalFilename();
         if (!file.isEmpty()) {
             try {
-                String[] after = fileName.split("\\.");
-                long longTime = (new Date()).getTime();
-                String time = Long.toString(longTime);
-                int id = Integer.parseInt(after[0]);
+                String[] after = fileName.split("_");
+                String time = after[0];
+                String[] temp = after[1].split("\\.");
+                long longTime;
+                try {
+                    longTime = Long.parseLong(time);
+                } catch (Exception e) {
+                    return "false timestamp";
+                }
+                int id = Integer.parseInt(temp[0]);
                 Camera camera = cameraService.findCameraById(id);
                 String position = camera.getPosition();
-                String storeFileName = time + "." + after[1];
+                String storeFileName = time + "." + temp[1];
                 String filePath = ConfigUtil.getVideoFilePath(id);
                 String webPath = ConfigUtil.getVideoPath(id);
                 String url = filePath + storeFileName;

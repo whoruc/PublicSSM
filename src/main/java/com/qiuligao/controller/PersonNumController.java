@@ -55,8 +55,9 @@ public class PersonNumController {
         if (!file.isEmpty()) {
             try {
                 String[] after = fileName.split("_");
-                int id = Integer.parseInt(after[0]);
-                int nums = Integer.parseInt(after[1]);
+                String[] temp = after[2].split("\\.");
+                int id = Integer.parseInt(after[1]);
+                int nums = Integer.parseInt(temp[0]);
                 String filePath = ConfigUtil.getFilePath(id);
                 String url = filePath + fileName;
                 File storeFile = new File(url);

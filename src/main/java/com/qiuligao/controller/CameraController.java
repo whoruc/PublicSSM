@@ -52,4 +52,23 @@ public class CameraController {
     public String getAllPic() {
         return JSON.toJSONString(ConfigUtil.getLastNameC1());
     }
+
+    @RequestMapping(value = "/getNearestGuard", method = {RequestMethod.GET, RequestMethod.POST}, produces = "text/html;charset=UTF-8")
+    @ResponseBody
+    public String getNearestGuard(@RequestParam (value = "id") int id) {
+        return JSON.toJSONString(cameraService.getNearestGuard(id));
+    }
+
+    @RequestMapping(value = "/getAllGuards", method = {RequestMethod.GET, RequestMethod.POST}, produces = "text/html;charset=UTF-8")
+    @ResponseBody
+    public String getAllGuards() {
+        return JSON.toJSONString(cameraService.getAllGuards());
+    }
+
+    @RequestMapping(value = "/addExcreedTimes", method = {RequestMethod.GET, RequestMethod.POST}, produces = "text/html;charset=UTF-8")
+    @ResponseBody
+    public String addExreedTimes(@RequestParam (value = "id") int id) {
+        cameraService.addExcreedTimes(id);
+        return "1";
+    }
 }

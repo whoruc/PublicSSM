@@ -38,20 +38,7 @@ public class testVideo {
 
     @Test
     public void testVideoTime() {
-        String fileName = "1.mp4";
-        String[] after = fileName.split("\\.");
-        long longTime = (new Date()).getTime();
-        String time = Long.toString(longTime);
-        int id = Integer.parseInt(after[0]);
-        Camera camera = cameraService.findCameraById(id);
-        String position = camera.getPosition();
-        String storeFileName = after[0] + "_" + position + "_" + time + "." + after[1];
-        String filePath = ConfigUtil.getVideoFilePath(id);
-        String webPath = ConfigUtil.getVideoPath(id);
-        String url = filePath + storeFileName;
-        System.out.println(url);
-        String webUrl = webPath + storeFileName;
-        videoService.uploadVideos(storeFileName, new Timestamp(longTime), 400, position, webUrl, id);
+        System.out.println(JSON.toJSONString(cameraService.getAllGuards()));
     }
 
     void setQueue(String name) {

@@ -3981,99 +3981,106 @@
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="908" parent="292" name="PRIMARY">
+    <column id="908" parent="292" name="times">
+      <Position>6</Position>
+      <DataType>int(11)|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="909" parent="292" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="909" parent="293" name="id">
+    <column id="910" parent="293" name="id">
       <Position>1</Position>
       <DataType>int(20)|0s</DataType>
       <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="910" parent="293" name="name">
+    <column id="911" parent="293" name="name">
       <Position>2</Position>
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="911" parent="293" name="phone">
+    <column id="912" parent="293" name="phone">
       <Position>3</Position>
-      <DataType>int(11)|0s</DataType>
+      <DataType>varchar(12)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="912" parent="293" name="longitude">
+    <column id="913" parent="293" name="longitude">
       <Position>4</Position>
       <DataType>decimal(10,6 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="913" parent="293" name="latitude">
+    <column id="914" parent="293" name="latitude">
       <Position>5</Position>
       <DataType>decimal(10,6 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="914" parent="293" name="PRIMARY">
+    <key id="915" parent="293" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="915" parent="294" name="nums">
+    <column id="916" parent="294" name="nums">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="916" parent="294" name="camera_id">
+    <column id="917" parent="294" name="camera_id">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="917" parent="294" name="person_num_camera_id_fk">
+    <index id="918" parent="294" name="person_num_camera_id_fk">
       <ColNames>camera_id</ColNames>
       <Type>btree</Type>
     </index>
-    <foreign-key id="918" parent="294" name="person_num_camera_id_fk">
+    <foreign-key id="919" parent="294" name="person_num_camera_id_fk">
       <ColNames>camera_id</ColNames>
       <RefSchemaName>publicSoft</RefSchemaName>
       <RefTableName>camera</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="919" parent="295" name="account">
+    <column id="920" parent="295" name="account">
       <Position>1</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="920" parent="295" name="password">
+    <column id="921" parent="295" name="password">
       <Position>2</Position>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="921" parent="295" name="PRIMARY">
+    <key id="922" parent="295" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>account</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="922" parent="296" name="id">
+    <column id="923" parent="296" name="id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="923" parent="296" name="name">
+    <column id="924" parent="296" name="name">
       <Position>2</Position>
       <DataType>varchar(70)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="924" parent="296" name="time">
+    <column id="925" parent="296" name="time">
       <Position>3</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
@@ -4081,40 +4088,40 @@
       <ColumnKind>normal</ColumnKind>
       <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
     </column>
-    <column id="925" parent="296" name="length">
+    <column id="926" parent="296" name="length">
       <Position>4</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="926" parent="296" name="position">
+    <column id="927" parent="296" name="position">
       <Position>5</Position>
       <DataType>varchar(40)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="927" parent="296" name="file_position">
+    <column id="928" parent="296" name="file_position">
       <Position>6</Position>
       <DataType>varchar(100)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="928" parent="296" name="camera_id">
+    <column id="929" parent="296" name="camera_id">
       <Position>7</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="929" parent="296" name="video_camera_id_fk">
+    <index id="930" parent="296" name="video_camera_id_fk">
       <ColNames>camera_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="930" parent="296" name="PRIMARY">
+    <key id="931" parent="296" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="931" parent="296" name="video_camera_id_fk">
+    <foreign-key id="932" parent="296" name="video_camera_id_fk">
       <ColNames>camera_id</ColNames>
       <RefSchemaName>publicSoft</RefSchemaName>
       <RefTableName>camera</RefTableName>

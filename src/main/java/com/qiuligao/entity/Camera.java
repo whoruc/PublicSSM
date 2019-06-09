@@ -11,6 +11,11 @@ public class Camera {
     int threshold;
     Double longitude;
     Double latitude;
+    int times;
+
+    public int getTimes() {
+        return times;
+    }
 
     public int getId() {
         return id;
@@ -50,5 +55,9 @@ public class Camera {
 
     public void setLatitude(Double latitude) {
         this.latitude = latitude;
+    }
+
+    public void setTimes(int times) {
+        this.times = times;
     }
 }
