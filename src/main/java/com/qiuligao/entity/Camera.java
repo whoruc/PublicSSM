@@ -12,6 +12,7 @@ public class Camera {
     Double longitude;
     Double latitude;
     int times;
+    int param;
 
     public int getTimes() {
         return times;
@@ -59,5 +60,13 @@ public class Camera {
 
     public void setTimes(int times) {
         this.times = times;
+    }
+
+    public int getParam() {
+        return param;
+    }
+
+    public void setParam(int param) {
+        this.param = param;
     }
 }

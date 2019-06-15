@@ -39,8 +39,13 @@ public class VideoController {
     @ResponseBody
     @RequestMapping(value = "/uploadVideo", method = {RequestMethod.GET, RequestMethod.POST}, produces = "text/html;charset=UTF-8")
     public String uploadPicture(@RequestParam("files") MultipartFile file) {
+        long size = file.getSize();
+        int MAX = 1024 * 2;
         String fileName = file.getOriginalFilename();
         if (!file.isEmpty()) {
+            if (size < MAX) {
+                return "file < 200kb";
+            }
             try {
                 String[] after = fileName.split("_");
                 String time = after[0];

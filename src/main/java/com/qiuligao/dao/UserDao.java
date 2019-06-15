@@ -20,7 +20,9 @@ public interface UserDao {
      * 注册
      * @param account
      * @param password
+     * @param phone
      * @return
      */
-    int sign(@Param("account") String account, @Param("password") String password);
+    int sign(@Param("account") String account, @Param("password") String password,
+             @Param("phone") String phone);
 }

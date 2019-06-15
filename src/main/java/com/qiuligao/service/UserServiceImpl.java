@@ -18,12 +18,12 @@ public class UserServiceImpl implements UserService {
         return userDao.login(account, password);
     }
 
-    public int sign(String account, String password) {
+    public int sign(String account, String password, String phone) {
         int status = login(account, password);
         if(status == 1 || status == -1) {
             return 0;
         }
-        userDao.sign(account, password);
+        userDao.sign(account, password, phone);
         return 1;
     }
 }

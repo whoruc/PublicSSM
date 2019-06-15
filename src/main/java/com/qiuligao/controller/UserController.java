@@ -42,9 +42,10 @@ public class UserController {
      */
     @RequestMapping(value = "/sign", method = {RequestMethod.GET, RequestMethod.POST})
     @ResponseBody
-    public String signUser(@RequestParam(value = "account")String account,
-                           @RequestParam(value = "password")String password) {
-        int status = userService.sign(account, password);
+    public String signUser(@RequestParam(value = "account") String account,
+                           @RequestParam(value = "password") String password,
+                           @RequestParam(value = "phone") String phone) {
+        int status = userService.sign(account, password, phone);
         System.out.println(JSON.toJSONString(status));
         return JSON.toJSONString(status);
     }

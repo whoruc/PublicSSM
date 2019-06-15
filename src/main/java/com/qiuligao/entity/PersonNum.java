@@ -6,6 +6,7 @@ package com.qiuligao.entity;
 public class PersonNum {
     int nums;
     int camera_id;
+    int threshold;
 
     String picUrl;
 
@@ -31,5 +32,13 @@ public class PersonNum {
 
     public void setCameraID(int cameraID) {
         this.camera_id = cameraID;
+    }
+
+    public int getThreshold() {
+        return threshold;
+    }
+
+    public void setThreshold(int threshold) {
+        this.threshold = threshold;
     }
 }

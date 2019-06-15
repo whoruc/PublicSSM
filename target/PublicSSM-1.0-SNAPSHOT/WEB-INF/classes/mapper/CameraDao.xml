@@ -17,4 +17,8 @@
     <update id="addExcreedTimes" parameterType="int">
         update camera set times = times + 1 where id = #{id}
     </update>
+
+    <update id="modifyParam" parameterType="int">
+        update camera set param = param + #{param} where id = #{id};
+    </update>
 </mapper>

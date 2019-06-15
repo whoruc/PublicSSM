@@ -7,6 +7,6 @@
     </select>
     
     <insert id="sign" parameterType="String">
-        insert into user values (#{account}, #{password});
+        insert into user values (#{account}, #{password}, #{phone});
     </insert>
 </mapper>

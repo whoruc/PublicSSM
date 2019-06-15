@@ -50,4 +50,23 @@ public interface CameraService {
      * @return
      */
     List<Guard> getAllGuards();
+
+    /**
+     * 开启或关闭摄像头标注显示
+     * @param option
+     */
+    void modifyOption(int option);
+
+    /**
+     * 获取标注状态
+     * @return
+     */
+    int getCameraOption();
+
+    /**
+     * 更改摄像头参数
+     * @param id
+     * @param param
+     */
+    void modifyParam(int id, int param);
 }

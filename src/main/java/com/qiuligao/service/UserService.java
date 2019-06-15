@@ -17,7 +17,8 @@ public interface UserService {
      * 注册
      * @param account
      * @param password
+     * @param phone
      * @return
      */
-    int sign(String account, String password);
+    int sign(String account, String password, String phone);
 }

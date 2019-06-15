@@ -6,7 +6,31 @@
         select * from person_num;
     </select>
 
-    <update id="updateNumsById" parameterType="int">
+    <update id="updateNumsById" parameterType="java.lang.Integer">
         update person_num set nums = #{num} where camera_id = #{id};
     </update>
+
+    <select id="getHistory1" resultType="int" parameterType="String">
+        select nums from camera1_history where day = #{day} order by time;
+    </select>
+
+    <select id="getHistory2" resultType="int" parameterType="String">
+        select nums from camera2_history where day = #{day} order by time;
+    </select>
+
+    <select id="getHistory3" resultType="int" parameterType="String">
+        select nums from camera3_history where day = #{day} order by time;
+    </select>
+
+    <insert id="addHistory1">
+        insert into camera1_history (nums, time, day) values (#{nums}, #{time}, #{day});
+    </insert>
+
+    <insert id="addHistory2">
+        insert into camera2_history (nums, time, day) values (#{nums}, #{time}, #{day});
+    </insert>
+
+    <insert id="addHistory3">
+        insert into camera3_history (nums, time, day) values (#{nums}, #{time}, #{day});
+    </insert>
 </mapper>

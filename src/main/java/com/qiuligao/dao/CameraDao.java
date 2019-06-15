@@ -36,4 +36,17 @@ public interface CameraDao {
      * @param id
      */
     void addExcreedTimes(int id);
+
+    /**
+     * 获取标注状态
+     * @return
+     */
+    int getCameraOption();
+
+    /**
+     * 更改摄像头参数
+     * @param id
+     * @param param
+     */
+    void modifyParam(@Param("id") int id, @Param("param") int param);
 }

@@ -4,6 +4,7 @@ import com.qiuligao.dao.CameraDao;
 import com.qiuligao.dao.GuardDao;
 import com.qiuligao.entity.Camera;
 import com.qiuligao.entity.Guard;
+import com.qiuligao.util.ConfigUtil;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -47,5 +48,17 @@ public class CameraServiceImpl implements CameraService {
 
     public List<Guard> getAllGuards() {
         return guardDao.getAllGuards();
+    }
+
+    public void modifyOption(int option) {
+        ConfigUtil.setCameraOption(option);
+    }
+
+    public void modifyParam(int id, int param) {
+        cameraDao.modifyParam(id, param);
+    }
+
+    public int getCameraOption() {
+        return ConfigUtil.getCameraOption();
     }
 }

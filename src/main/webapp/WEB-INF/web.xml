@@ -35,6 +35,11 @@
     </init-param>
   </filter>
 
+  <listener>
+    <listener-class>com.qiuligao.lisener.NumsLisener</listener-class>
+  </listener>
+
+
   <filter-mapping>
     <filter-name>encodingFilter</filter-name>
     <url-pattern>/*</url-pattern>
